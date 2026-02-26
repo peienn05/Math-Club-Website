@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #85cbcc;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+.logo{
+    font-size:24px;
+    display: flex;
+    align-items: center;
+    font-weight:bold;
+}
+
+.nav ul {
+    list-style:none;
+    display:flex;
+
+}
+.nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+.nav ul li a {
+    display:block;
+    padding:20px 25px;
+    color:#FFF;
+    text-decoration:none;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+.nav ul li ul.dropdown li{
+    display:block;
+}
+.nav ul li ul.dropdown{
+    width:150px;
+    background-color: #85cbcc;
+    position:absolute;
+    z-index:999;
+    display:none;
+    left:0;
+}
+.nav ul li a:hover{
+    background-color:#A8DEE0;
+}
+.nav ul li:hover ul.dropdown{
+    display:block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #104d4d;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.registration-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+    padding: 8px;
+    margin-bottom: 12px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.registration-form button {
+    padding: 10px 20px;
+    background-color: #3b8ea5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.registration-form button:hover:not([disabled]) {
+    background-color: #357d90;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:disabled, select:disabled {
+    background-color: #f2f2f2;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .nav-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #a8dee0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #7cc3c5;
+  }
+  
+
+footer {
+    margin-top: 40px;
+    background-color: #85cbcc;
+    color: #222;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9em;
+}

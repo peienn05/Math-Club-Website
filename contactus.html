@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">Math Club
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About us</a>
+                    <ul class="dropdown">
+                        <li><a href="ourhistory.html">Our History</a></li>
+                        <li><a href="ourmember.html">Our Member</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Competition</a>
+                    <ul class="dropdown">
+                        <li><a href="competition_home.html">Upcoming</a></li>
+                        <li><a href="past_winners.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="event-home.html">Event</a></li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="honorlist.html">Honor List</a></li>
+                        <li><a href="latestnews.html">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                    <ul class="dropdown">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="joinus.html">Join Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h1>Contact Us</h1>
+    <br>
+    <div style="text-align: center; border-radius: 30px;" >
+        <img src="image/ourlocation.jpg">
+    </div>
+    <br>
+    <h4 style="text-align: center;justify-content: left;">📍Our Location:Jalan Teknologi 5,Taman Teknologi Malaysia, <br>57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</h4>
+    <h4 style="text-align: center;justify-content: left;">📍Email:MathClub@mail.apu.edu.my</h4><br>
+    <div class="media">
+        <h2 style="padding-left:20px;">Our Social Media:</h2>
+        <br>
+        <div class="app">
+            <div class="insta">
+                <img src="image/insta.png" width="50">Instagram：APU_Math_Club
+            </div>
+            <div class="face">
+                <img src="image/face.png" width="50">Facebook：APU_Mathhh
+            </div>
+            <div class="twi">
+                <img src="image/twitter.png" width="50">Twitter：APU_Math_Club
+            </div>
+        </div>
+            
+
+    </div>
+    <p style="text-align: center;"><br>Feel free to share any suggestions or improvements for our club. We appreciate your feedback!<br> Collaborations are welcome too! Please fill out the 'Contact Us' form, and we will get in touch with you as soon as possible!</p>
+    <div class="content">
+        <img src="image/logo1.png" alt="logo">
+        
+        <div class="form-container">
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="xxxx@gmail.com" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="xxx" required>
+            <label for="enquiry">Message:</label>
+            <textarea name="enquiry" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    
+      <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+          if (this.checkValidity()) {
+            alert("Your message has been sent successfully!");
+            this.reset(); 
+          } else {
+            this.reportValidity(); 
+          }
+        });
+      </script>
+        
+    <footer class="footer">
+        <hr>
+            <p>© 2025 Apu Math Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

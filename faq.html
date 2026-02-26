@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">Math Club
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About us</a>
+                    <ul class="dropdown">
+                        <li><a href="ourhistory.html">Our History</a></li>
+                        <li><a href="ourmember.html">Our Member</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Competition</a>
+                    <ul class="dropdown">
+                        <li><a href="competition_home.html">Upcoming</a></li>
+                        <li><a href="past_winners.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="event-home.html">Event</a></li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="honorlist.html">Honor List</a></li>
+                        <li><a href="latestnews.html">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                    <ul class="dropdown">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="joinus.html">Join Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <img src="image/faq.gif" width="100%" height="550px">
+    <h1>Most Frequently asked questions:</h1>
+    <section>
+        <div class="faq-item">
+            <h3>1. What is the APU Math Club?</h3>
+            <div class="answer">
+                <p>The APU Math Club is a student-led organization that provides a platform for students interested in mathematics to connect, collaborate, and grow their skills. We organize workshops, study sessions, math challenges, and networking events to foster a passion for math in an engaging and supportive environment.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>2. How do I become a member of the APU Math Club?</h3>
+            <div class="answer">
+                <p>To become a member, simply attend one of our club meetings or events. You can also join us online through our official club page or by reaching out to any of the club’s executive members. We welcome students of all levels of mathematical ability!</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>3. Are there any membership fees?</h3>
+            <div class="answer">
+                <p>No, membership to the APU Math Club is free of charge! We strive to make our activities accessible to all students, regardless of their financial background.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>4. What kind of events does the APU Math Club organize?</h3>
+            <div class="answer">
+                <p>We organize a wide variety of events, including:</p>
+                <ul>
+                    <li>Weekly study sessions</li>
+                    <li>Math challenges and competitions</li>
+                    <li>Workshops on advanced topics and career opportunities in math</li>
+                    <li>Guest lectures from professionals in mathematics-related fields</li>
+                    <li>Social events to meet fellow math enthusiasts</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>5. Do I need to be a math major to join the club?</h3>
+            <div class="answer">
+                <p>No! The Math Club is open to all students, regardless of your major. Whether you're a math major or just have an interest in mathematics, we encourage you to join and participate in our activities.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>6. Can I participate in Math Club activities if I'm not very good at math?</h3>
+            <div class="answer">
+                <p>Absolutely! We welcome members of all skill levels. Our activities are designed to cater to a range of abilities, from beginners to advanced mathematicians. It’s a great opportunity to learn and improve in a supportive environment.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>7. How often do you hold meetings?</h3>
+            <div class="answer">
+                <p>We hold regular meetings every week during the semester. The schedule may vary, but we always post updates on our club’s website and social media to keep members informed. Special events are also announced in advance.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>8. How can I stay updated on club activities?</h3>
+            <div class="answer">
+                <p>You can stay updated by following us on our official social media pages, subscribing to our mailing list, or checking our club website regularly. We also send out weekly newsletters with event details.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>9. Can I suggest an event or workshop for the club?</h3>
+            <div class="answer">
+                <p>Definitely! We encourage all members to contribute their ideas and help shape the direction of the club. Feel free to reach out to any of the executive members or submit your ideas through our contact us page.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3>10. What are the benefits of joining the APU Math Club?</h3>
+            <div class="answer">
+                <p>By joining the Math Club, you’ll have the chance to:</p>
+                <ul>
+                    <li>Enhance your problem-solving and critical thinking skills</li>
+                    <li>Network with like-minded individuals and professionals in the field</li>
+                    <li>Participate in engaging and fun math challenges</li>
+                    <li>Gain exposure to career opportunities in math-related industries</li>
+                    <li>Build friendships and collaborate on interesting projects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+    
+        faqItems.forEach(item => {
+            item.querySelector('h3').addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    <p style="text-align: center;">Did the FAQ help you? If not, feel free to click <a href="contactus.html">Contact Us</a> for further information.</p>
+    <br>
+    <footer class="footer">
+        <hr>
+            <p>© 2025 Apu Math Club. All rights reserved.</p>
+    </footer>
+ </body>
+</html>
+    

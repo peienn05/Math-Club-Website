@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="css/joinus.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">Math Club
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About us</a>
+                    <ul class="dropdown">
+                        <li><a href="ourhistory.html">Our History</a></li>
+                        <li><a href="ourmember.html">Our Member</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Competition</a>
+                    <ul class="dropdown">
+                        <li><a href="competition_home.html">Upcoming</a></li>
+                        <li><a href="past_winners.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="event-home.html">Event</a></li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="honorlist.html">Honor List</a></li>
+                        <li><a href="latestnews.html">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                    <ul class="dropdown">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="joinus.html">Join Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h2>Member Registration Form</h2>
+    <div style="text-align: center;">
+    </div>
+    <br>
+            <form id="registerForm">
+            <label for="First name">First Name:</label>
+            <input type="text" id="First name" First name="First name" required>
+            <label for="Last name">Last Name:</label>
+            <input type="text" id="Last name" Last name="Last name" required>
+        
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Please select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="19" max="35" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        
+            <label for="phone">Contact Number：</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="example:012-3456789">
+        
+            <label for="reason">Reason you choose our club：</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+        
+            <button type="submit">Submit</button>
+        </form>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+    
+          if (this.checkValidity()) {
+            alert("Register successful!");
+           this.submit(); 
+          } else {
+            this.reportValidity();
+          }
+        });
+    </script>
+    <p>Note:*Strictly for APU Students only<br>*Your age should be between 19 and 35 years old</p>
+    <p>*Any questions?Click <a href="faq.html">FAQ</a> for help
+    </p>
+    <footer class="footer">
+        <hr>
+            <p>© 2025 Apu Math Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

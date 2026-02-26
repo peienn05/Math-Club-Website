@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,#d3e3eb,#b6e0eb);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #85cbcc;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav ul li ul.dropdown li {
+    display: block;
+}
+
+.nav ul li ul.dropdown {
+    width: 150px;
+    background-color: #85cbcc;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    left: 0;
+}
+
+.nav ul li a:hover {
+    background-color: #A8DEE0;
+}
+
+.nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+.main-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    color: #2c3e50;
+    margin-bottom: px;
+    margin-top: 10px;
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+.quiz-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.question-block {
+    margin-bottom: 25px;
+}
+
+.options label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #85cbcc;
+    color: white;
+    font-family: Arial, sans-serif;
+}

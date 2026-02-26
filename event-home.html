@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title> 
+    <link href="css/event-home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">Math Club
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About us</a>
+                    <ul class="dropdown">
+                        <li><a href="ourhistory.html">Our History</a></li>
+                        <li><a href="ourmember.html">Our Member</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Competition</a>
+                    <ul class="dropdown">
+                        <li><a href="competition_home.html">Upcoming</a></li>
+                        <li><a href="past_winners.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="event-home.html">Event</a></li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="honorlist.html">Honor List</a></li>
+                        <li><a href="latestnews.html">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                    <ul class="dropdown">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="joinus.html">Join Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1>Events</h1>
+
+        <!-- searching  -->
+        <input type="text" id="searchInput" placeholder="Enter to search..." onkeyup="filterEvents()">
+
+        <!-- choose data -->
+        <input type="date" id="dateFilter" onchange="filterEvents()">
+
+        <!-- events list -->
+        <div id="eventList">
+            <div class="event" data-title="Math Seminar" data-start-date="2025-04-29" data-end-date="2025-04-30">
+                <img src="image/event1.png" alt="math seminar 1" height="100" width="100">
+                <div class="event-details">
+                    <div class="event-title">Math Seminar</div>
+                    <div class="event-description">
+                        <p>📅 Date: <b>29-30 April, 2025 </b></p>
+                        <p>🚩 Location: APU Audi7 </p>
+                        <p>Join us for an in-depth discussion on advanced mathematical theories. </p>
+                    </div>
+                </div>
+                <button class="know-more" onclick="
+                    window.location.href='event1.html'
+                ">Know More</button>
+            </div>
+
+            <div class="event" data-title="Math Camp" data-start-date="2025-04-23" data-end-date="2025-04-25">
+                <img src="image/event2.png" alt="math camp" height="100" width="100">
+                <div class="event-details">
+                    <div class="event-title">Math Camp</div>
+                    <div class="event-description">
+                        <p>📅 Date: <b>23-25 April, 2025 </b></p>
+                        <p>🚩 Location: APU Audi2 </p>
+                        <p>Join us for an in-depth discussion on advanced mathematical theories. </p>
+                    </div>
+                </div>
+                <button class="know-more" onclick="
+                    window.location.href='event2.html'
+                ">Know More</button>
+            </div>
+
+            <div class="event" data-title="Math Carnival" data-start-date="2025-04-22" data-end-date="2025-04-24">
+                <img src="image/event3.png" alt="math carnival" height="100" width="100">
+                <div class="event-details">
+                    <div class="event-title">Math Carnival</div>
+                    <div class="event-description">
+                        <p>📅 Date: <b>22-24 April, 2025</b> </p>
+                        <p>🚩 Location: APU Centrepoint </p>
+                        <p>Join us for an in-depth discussion on advanced mathematical theories. </p>
+                    </div>
+                </div>
+                <button class="know-more" onclick="
+                    window.location.href='event3.html'
+                ">Know More</button>
+            </div>
+
+            <div class="event" data-title="Math Seminar 2" data-start-date="2025-03-29" data-end-date="2025-03-31">
+                <img src="image/event4.png" alt="math seminar2" height="100" width="100">
+                <div class="event-details">
+                    <div class="event-title">Math Seminar 2</div>
+                    <div class="event-description">
+                        <p>📅 Date: <b>29-31 March, 2025</b> </p>
+                        <p>🚩 Location: APU Audi7 </p>
+                        <p>Join us for an in-depth discussion on advanced mathematical theories. </p>
+                    </div>
+                </div>
+                <button class="know-more" onclick="
+                    window.location.href='event4.html'
+                ">Know More</button>
+            </div>
+
+            <div class="event" data-title="Math Camp 2" data-start-date="2025-03-25" data-end-date="2025-03-28">
+                <img src="image/event5.png" alt="math camp 2" height="100" width="100">
+                <div class="event-details">
+                    <div class="event-title">Math Camp 2</div>
+                    <div class="event-description">
+                        <p>📅 Date: <b>25-28 March, 2025</b> </p>
+                        <p>🚩 Location: APU Audi7 </p>
+                        <p>Join us for an in-depth discussion on advanced mathematical theories. </p>
+                    </div>
+                </div>
+                <button class="know-more" onclick="
+                    window.location.href='event5.html'
+                ">Know More</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <hr>
+            <p>© 2025 Apu Math Club. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterEvents(){
+            let searchInput = document.getElementById("searchInput").value.toLowerCase();
+            let selectedDate = document.getElementById("dateFilter").value;
+            let events = document.querySelectorAll(".event");
+
+            events.forEach(event => {
+                let title = event.getAttribute("data-title").toLowerCase();
+                let startDate = event.getAttribute("data-start-date");
+                let endDate = event.getAttribute("data-end-date");
+
+                // change type string to type date
+                let selected = new Date(selectedDate);
+                let start = new Date(startDate);
+                let end = new Date(endDate);
+
+                let matchSearch = title.includes(searchInput);
+                let matchDate = (selected >= start && selected <=end) || selectedDate==="" ;
+
+                if (matchSearch && matchDate){
+                    event.classList.remove("hidden");
+                } else {
+                    event.classList.add("hidden");
+                }
+            });
+        }
+
+        function markPastEvents(){
+            let today = new Date();
+            let events = document.querySelectorAll(".event");
+
+            events.forEach(event => {
+                let endDate = event.getAttribute("data-end-date");
+                //  change type to date
+                let end = new Date(endDate);
+
+                if (end < today){
+                    event.classList.add("past");
+                }
+            });
+        }
+        
+        markPastEvents();
+    </script>
+ 
+</body>
+</html>

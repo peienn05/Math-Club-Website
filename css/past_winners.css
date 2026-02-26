@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #e6f5f6;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #85cbcc;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.logo img {
+  width: 50px; 
+  height: auto;
+}
+.logo{
+  font-size:24px;
+  display: flex;
+  align-items: center;
+  font-weight:bold;
+}
+
+.nav ul {
+  list-style:none;
+  display:flex;
+
+}
+.nav ul li {
+  display:inline-block;
+  position:relative;
+}
+
+.nav ul li a {
+  display:block;
+  padding:20px 25px;
+  color:#FFF;
+  text-decoration:none;
+  text-align:center;
+  font-size:16px;
+  font-weight:bold;
+}
+.nav ul li ul.dropdown li{
+  display:block;
+}
+.nav ul li ul.dropdown{
+  width:150px;
+  background-color: #85cbcc;
+  position:absolute;
+  z-index:999;
+  display:none;
+  left:0;
+}
+.nav ul li a:hover{
+  background-color:#A8DEE0;
+}
+.nav ul li:hover ul.dropdown{
+  display:block;
+}
+
+.past-events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.past-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 15px;
+  text-align: left;
+}
+
+.poster-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.poster-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(80%);
+}
+
+.winner-section {
+  margin-top: 10px;
+}
+
+.winner-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.winner-row:last-child {
+  border-bottom: none;
+}
+
+.winner-row .title {
+  font-weight: bold;
+  color: #2d5c5c;
+  width: 35%;
+}
+
+.winner-row .name {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.winner-row .score {
+  font-weight: bold;
+  color: #444;
+  text-align: right;
+  width: 25%;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.nav-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #a8dee0;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #7cc3c5;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #a8dee0;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}

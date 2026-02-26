@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice - Basic</title>
+  <link rel="stylesheet" href="css/partice.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo">Math Club
+    </div>
+    <nav class="nav">
+      <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="#">About us</a>
+              <ul class="dropdown">
+                  <li><a href="ourhistory.html">Our History</a></li>
+                  <li><a href="ourmember.html">Our Member</a></li>
+              </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#">Competition</a>
+              <ul class="dropdown">
+                  <li><a href="competition_home.html">Upcoming</a></li>
+                  <li><a href="past_winners.html">Past</a></li>
+              </ul>
+          </li>
+          <li><a href="event-home.html">Event</a></li>
+          <li><a href="#">News</a>
+              <ul class="dropdown">
+                  <li><a href="honorlist.html">Honor List</a></li>
+                  <li><a href="latestnews.html">Latest News</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Contact Us</a>
+              <ul class="dropdown">
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="joinus.html">Join Us</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  </header>
+
+  <div class="main-content">
+    <h2 class="title">Math Practice - Basic</h2>
+    <p class="description">
+      Ready to test your basic math skills? <br> Choose the best answer for each question and click "Submit All" when you're done!
+    </p>
+
+    <div class="quiz-card">
+      <div id="quiz-container"></div>
+      <button onclick="submitAll()">Submit All</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <hr>
+    <p>© 2025 Apu Math Club. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const questions = [
+      {
+        id: "q1",
+        question: "If Sarah has 5 apples and buys 3 more from the store, how many apples does she have in total?",
+        options: ["6", "7", "8", "9"],
+        answer: "8"
+      },
+      {
+        id: "q2",
+        question: "John had 10 candies. He gave 4 to his friend. How many candies does he have left now?",
+        options: ["5", "6", "7", "8"],
+        answer: "6"
+      },
+      {
+        id: "q3",
+        question: "A box contains 3 rows with 4 pencils in each row. What is the total number of pencils in the box?",
+        options: ["12", "11", "14", "10"],
+        answer: "12"
+      },
+      {
+        id: "q4",
+        question: "A teacher divides 20 students into 5 equal groups. How many students are there in each group?",
+        options: ["2", "3", "4", "5"],
+        answer: "4"
+      },
+      {
+        id: "q5",
+        question: "If x is a number that, when added to 2, gives 7, what is the value of x?",
+        options: ["4", "5", "6", "7"],
+        answer: "5"
+      },
+      {
+        id: "q6",
+        question: "There are 9 flowers in one vase. If you place them in 2 identical vases equally, how many flowers in each?",
+        options: ["4", "4.5", "5", "6"],
+        answer: "4.5"
+      }
+    ];
+
+    const quizContainer = document.getElementById("quiz-container");
+
+    questions.forEach(q => {
+      const div = document.createElement("div");
+      div.className = "question-block";
+      div.innerHTML = `
+        <h3>${q.question}</h3>
+        <div class="options">
+          ${q.options.map(option => `
+            <label><input type="radio" name="${q.id}" value="${option}"> ${option}</label>
+          `).join("")}
+        </div>
+        <div class="feedback" id="feedback-${q.id}"></div>
+      `;
+      quizContainer.appendChild(div);
+    });
+
+    function submitAll() {
+      questions.forEach(q => {
+        const selected = [...document.getElementsByName(q.id)].find(r => r.checked)?.value;
+        const feedback = document.getElementById("feedback-" + q.id);
+        if (!selected) {
+          feedback.innerHTML = `<span class="incorrect">❌ Please select an answer.</span>`;
+        } else if (selected === q.answer) {
+          feedback.innerHTML = `<span class="correct">✅ Correct!</span>`;
+        } else {
+          feedback.innerHTML = `<span class="incorrect">❌ Incorrect. Correct answer: ${q.answer}</span>`;
+        }
+      });
+    }
+  </script>
+</body>
+</html>

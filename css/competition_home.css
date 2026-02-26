@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,#d3e3eb,#b6e0eb);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #85cbcc;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+.logo{
+    font-size:24px;
+    display: flex;
+    align-items: center;
+    font-weight:bold;
+}
+
+.nav ul {
+    list-style:none;
+    display:flex;
+
+}
+.nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+.nav ul li a {
+    display:block;
+    padding:20px 25px;
+    color:#FFF;
+    text-decoration:none;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+}
+.nav ul li ul.dropdown li{
+    display:block;
+}
+.nav ul li ul.dropdown{
+    width:150px;
+    background-color: #85cbcc;
+    position:absolute;
+    z-index:999;
+    display:none;
+    left:0;
+}
+.nav ul li a:hover{
+    background-color:#A8DEE0;
+}
+.nav ul li:hover ul.dropdown{
+    display:block;
+}
+  
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.subtext {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.competition-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.competition-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.competition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.competition-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.competition-card h2 {
+    font-size: 1.2rem;
+    color: #2d5c5c;
+    margin: 10px 0;
+}
+
+.competition-card p {
+    font-size: 0.95rem;
+    color: #444;
+    margin: 5px 0;
+}
+
+.competition-card button {
+    background-color: #2d5c5c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.competition-card button:hover {
+    background-color: #1f3f3f;
+}
+
+footer {
+    background-color: #a8dee0;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #333;
+}

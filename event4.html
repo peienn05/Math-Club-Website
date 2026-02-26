@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Seminar 2</title>
+    <link href="css/event4.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">Math Club
+        </div>
+        <nav class="nav">
+            <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About us</a>
+                    <ul class="dropdown">
+                        <li><a href="ourhistory.html">Our History</a></li>
+                        <li><a href="ourmember.html">Our Member</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#">Competition</a>
+                    <ul class="dropdown">
+                        <li><a href="competition_home.html">Upcoming</a></li>
+                        <li><a href="past_winners.html">Past</a></li>
+                    </ul>
+                </li>
+                <li><a href="event-home.html">Event</a></li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="honorlist.html">Honor List</a></li>
+                        <li><a href="latestnews.html">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                    <ul class="dropdown">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="joinus.html">Join Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="cover">
+            <button class="coverRegister" onclick="scrollToForm()">Register Now</button>
+        </div>
+    
+        <h1>📢 Math Seminar 2025: The Mathematical Foundations of Artificial Intelligence</h2> 
+            
+        <!-- event detail -->
+        <div class="event-detail">
+            <img src="image/audi7.jpg" alt="audi7"><hr>
+            <p>🎓 Theme: The Mathematical Foundations of Artificial Intelligence <br>
+                📅 Date: March 29-31, 2025 <br>
+                🕘 Time: 9:00 AM - 5:00 PM <br>
+                🚩 Venue: APU Audi7  <br>
+                👥 Audience: All University students
+            </p>
+        </div>
+    
+        <div class="event-overview">
+            <h2>📖 Event Overview</h2>
+            <p>
+                Artificial Intelligence is built upon strong mathematical principles, 
+                from calculus and linear algebra to probability and optimization. Math 
+                Seminar 2025 bridges the gap between theoretical mathematics and practical 
+                AI applications, showing how mathematical concepts power machine learning, 
+                cryptography, and deep learning. This seminar features expert talks, hands-on 
+                coding workshops, and panel discussions on how mathematics drives modern AI.
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Mathematical Frontiers in AI</h3>
+                        <p>Explored the role of mathematics in Artificial Intelligence, focusing on deep learning and 
+                            optimization techniques.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>The Magic of Number Theory</h3>
+                        <p>Dived into cryptography, prime numbers, and their applications in cybersecurity.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>Mathematics in Space Exploration</h3>
+                        <p>Discussed how mathematical models help in spacecraft navigation and interstellar travel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="event-highlight">
+            <div class="highlight">
+                <h2>📌 Event Highlights</h2>
+                <p>
+                    <b>🎤 Keynote Speeches: The Math Behind AI </b><br>
+                    Gain insights from experts on how mathematics is shaping the 
+                    future, including: <br>
+                    1. Prof. Emily Tan (Harvard University)  <br>
+                    2. Dr. Aaron Lim (AI & Data Science Researcher)  <br>
+                    <br>
+                    <b>🤖 Hands-on Machine Learning Workshop </b><br>
+                    Participate in practical coding sessions: <br>
+                    🔹 Build a simple neural network using Python <br>
+                    🔹 Apply optimization techniques in AI model training <br>
+                    🔹 Use probability models to make AI predictions<br>
+                    <br>
+                    <b>🏆 AI & Math Hackathon: The Ultimate Challenge</b><br>
+                    A mini hackathon where teams apply mathematical principles to AI challenges! 
+                    Work on real-world problems, such as data prediction models, AI-driven encryption, and 
+                    optimization problems, and present your solutions for a chance to win prizes!<br>
+                </p>
+            </div>
+    
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <div class="slide">
+                        <img src="image/speech3.png" alt="highlight1">
+                    </div>
+                    <div class="slide">
+                        <img src="image/ML.jpg" alt="highlight2">
+                    </div>
+                    <div class="slide">
+                        <img src="image/hackathon.png" alt="highlight3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="event-timetable">
+            <h2>📌 Event Timetable</h2>
+            <div class="timetable">
+                <img src="image/timetable4.png" alt="timetable" height="300px" width="700px">
+            </div>        
+        </div>
+    
+        <h3>🔥 Join us and unlock the beauty of mathematics! 🔥</h3>  
+    
+    
+        <!-- countdown -->
+        <div class="countdown">
+            <div id="countdown-container">
+                <div class="countdown-card">
+                    <div class="countdown-number" id="days">0</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+    
+                <div class="countdown-card">
+                    <div class="countdown-number" id="hours">0</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+    
+                <div class="countdown-card">
+                    <div class="countdown-number" id="mins">0</div>
+                    <div class="countdown-label">Mins</div>
+                </div>
+    
+                <div class="countdown-card">
+                    <div class="countdown-number" id="seconds">0</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- register -->
+        <div class="register">
+            <h2>Register Now</h2>
+            <input type="text" id="inputUserName" placeholder="Enter Your Name">
+            <input type="text" id="inputTP" placeholder="Enter Your TP Number">
+            <button id="registerBtn" onclick="registerEvent()">Event End</button>
+        </div>
+    
+    
+        <button class="scrollTop" onclick="scrollToTop()">⬆️</button>
+    </div>
+
+    <footer class="footer">
+        <hr>
+            <p>© 2025 Apu Math Club. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function registerEvent() {
+            userName = document.getElementById("inputUserName").value;
+            TPnum = document.getElementById("inputTP").value;
+            
+            if(userName !=="" && TPnum !==""){
+                let button = document.getElementById("registerBtn");
+                button.innerText = "Register successful";
+                button.disabled = true;
+                button.style.backgroundColor = "#dedede";
+                button.style.cursor = "default";
+
+                inputUserName.disabled = true;
+                inputTP.disabled = true;
+            } 
+        }
+
+        function timelineShow(year){
+            const timelineItems = document.querySelectorAll(".timeline-item");
+            const triggerBottom = window.innerHeight * 0.85;
+
+            timelineItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+
+                if (itemTop < triggerBottom){
+                    item.classList.add("show");
+                }
+            });
+        }
+
+        window.addEventListener("scroll",timelineShow)
+        timelineShow();
+
+        function scrollToForm(){
+            document.querySelector(".register").scrollIntoView({ behavior: "smooth" });
+        }
+
+        window.addEventListener("scroll",function(){
+            let button = document.querySelector(".scrollTop");
+            if (document.documentElement.scrollTop > 300){
+                button.classList.remove("hidden");
+            } else {
+                button.classList.add("hidden")
+            }
+        });
+
+        function scrollToTop(){
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }
+
+        // highlight slide show
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalslides = slides.length;
+
+        function nextslide(){
+            currentIndex = (currentIndex + 1) % totalslides;
+            document.querySelector(".slideshow").style.transform = `translateX(${-currentIndex * 100}%)`;
+        }
+
+        // automatic nextslide every 3s
+        setInterval(nextslide, 3000);
+
+        
+
+
+
+    </script>
+</body>
+</html>
